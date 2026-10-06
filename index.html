@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Michael Kelly's Bar &amp; Grill | Whitby, Ontario</title>
+  <meta name="description" content="Michael Kelly's Bar &amp; Grill on Winchester Rd E in Whitby, Ontario. Lunch and dinner in a casual, cozy setting. Dine in, takeout or delivery.">
+  <!-- DEMO: remove the next line when the real site goes live so search engines can list it -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- When you have a real web address, add: <link rel="canonical" href="https://YOUR-DOMAIN/"> -->
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:title" content="Michael Kelly's Bar &amp; Grill | Whitby, Ontario">
+  <meta property="og:description" content="Casual, cozy dining on Winchester Rd E in Whitby. Lunch and dinner.">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#121212">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="data/business.js" defer></script>
+  <script src="data/menu.js" defer></script>
+  <script src="data/gallery.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="sign"><div class="hero-grid">
+          <div class="hero-logo" data-logo-slot="large"></div>
+          <div class="hero-copy">
+          <h1 id="hero-title">Michael Kelly's Bar &amp; Grill</h1>
+          <p class="hero-lead">Casual, cozy dining on Winchester Road East in Whitby.</p>
+          <p class="hero-sub">Lunch and dinner, every day. Dine in, take out, or have it delivered.</p>
+          <div class="hero-actions">
+            <a class="btn btn-accent" href="#" data-action="order">Order Online</a>
+            <a class="btn btn-line" href="menu.html">View Menu</a>
+            <a class="btn btn-line" href="#" data-action="call">Call</a>
+            <a class="btn btn-line" href="#" data-action="directions">Get Directions</a>
+          </div>
+          </div>
+        </div></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="facts-title">
+      <div class="container">
+        <h2 id="facts-title" class="sr-only">Quick facts</h2>
+        <dl class="facts">
+          <div><dt>Address</dt><dd><address><span data-bind="address.street"></span><br><span data-bind="address.city"></span>, <span data-bind="address.province"></span> <span data-bind="address.postalCode"></span></address></dd></div>
+          <div><dt>Phone</dt><dd><a data-tel href="#"></a></dd></div>
+          <div><dt>Hours</dt><dd><a href="contact.html#hours">See opening hours</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="popular-title">
+      <div class="container split">
+        <div>
+          <h2 id="popular-title">Popular dishes</h2>
+          <p>These are dishes customers mention often. The restaurant still needs to confirm what is on the menu today, so check with them before you order.</p>
+          <a class="btn btn-red" href="menu.html">See the menu</a>
+        </div>
+        <div data-render="featured"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="ways-title">
+      <div class="container">
+        <h2 id="ways-title">Ways to enjoy it</h2>
+        <div data-render="services"></div>
+        <h2 id="know-title" class="know-title-gap">Good to know</h2>
+        <div class="know" data-render="goodToKnow"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="rating-title">
+      <div class="container">
+        <h2 id="rating-title">What customers say</h2>
+        <div class="rating">
+          <span class="rating-num" data-bind="rating.value"></span>
+          <span>out of 5 from <strong data-bind="rating.count"></strong> <span data-bind="rating.source"></span> reviews</span>
+        </div>
+        <p class="note">Ratings come from Google and change over time. They are customer opinions, not statements from the restaurant.</p>
+        <a class="btn btn-line-dark" href="reviews.html">More about reviews</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="visit-title">
+      <div class="container split">
+        <div>
+          <h2 id="visit-title">Find us in Whitby</h2>
+          <address><span data-bind="address.street"></span>, <span data-bind="address.city"></span>, <span data-bind="address.province"></span> <span data-bind="address.postalCode"></span></address>
+          <p>Free parking lot and free street parking are available.</p>
+          <div class="button-row">
+            <a class="btn btn-red" href="#" data-action="directions">Get Directions</a>
+            <a class="btn btn-line-dark" href="#" data-action="call">Call</a>
+          </div>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <div data-render="hours"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <noscript><p class="noscript-msg">This site needs JavaScript to show restaurant details. Please enable it, or contact the restaurant directly.</p></noscript>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Contact and Directions | Michael Kelly's Bar &amp; Grill, Whitby</title>
+  <meta name="description" content="Address, phone, directions, parking and accessibility for Michael Kelly's Bar &amp; Grill at 93 Winchester Rd E, Whitby, Ontario.">
+  <!-- DEMO: remove the next line when the real site goes live -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact and Directions | Michael Kelly's Bar &amp; Grill, Whitby">
+  <meta property="og:description" content="Address, phone, directions, parking and accessibility for Michael Kelly's Bar &amp; Grill at 93 Winchester Rd E, Whitby, Ontario.">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#121212">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="data/business.js" defer></script>
+  <script src="data/menu.js" defer></script>
+  <script src="data/gallery.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+  <main id="main">
+    <div class="page-head"><div class="container">
+      <h1>Contact and directions</h1>
+      <p>The quickest way to reach the restaurant is by phone.</p>
+    </div></div>
+    <section class="section">
+      <div class="container split">
+        <div>
+          <h2>Visit or call</h2>
+          <address><span data-bind="address.street"></span><br><span data-bind="address.city"></span>, <span data-bind="address.province"></span> <span data-bind="address.postalCode"></span><br><span data-bind="address.country"></span></address>
+          <p><strong>Phone:</strong> <a data-tel href="#"></a></p>
+          <p class="note">Map reference: <span data-bind="mapPlusCode"></span></p>
+          <div class="button-row">
+            <a class="btn btn-red" href="#" data-action="call">Call Now</a>
+            <a class="btn btn-red" href="#" data-action="directions">Get Directions</a>
+            <a class="btn btn-line-dark" href="#" data-action="order">Order Online</a>
+          </div>
+          <p class="note gap-top">An email address has not been confirmed, so please phone the restaurant.</p>
+        </div>
+        <div id="hours">
+          <h2>Hours</h2>
+          <div data-render="hours"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-alt">
+      <div class="container">
+        <h2>Good to know before you visit</h2>
+        <div class="know" data-render="goodToKnow"></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <noscript><p class="noscript-msg">This site needs JavaScript to show restaurant details. Please enable it, or contact the restaurant directly.</p></noscript>
+</body>
+</html>

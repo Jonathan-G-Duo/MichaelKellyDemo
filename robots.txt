@@ -1,0 +1,6 @@
+# DEMO SETTING: this blocks search engines while the site is a concept.
+# When the site goes live with the restaurant's approval, replace the line below with:
+#   Allow: /
+# and add:  Sitemap: https://YOUR-DOMAIN/sitemap.xml
+User-agent: *
+Disallow: /
